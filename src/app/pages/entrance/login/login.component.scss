@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.login-box {
+  background-color: #eeeeee;
+  padding: 2rem;
+  width: 30rem;
+  margin-top: 3rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.create-account {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.create-account {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.login-btn, .file-button {
+  width: 100%;
+}
+
+.file-button {
+  margin-top: 1.2rem;
+}
+
+.form-field {
+  margin-top: 1rem;
+  width: 100%;
+}

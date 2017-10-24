@@ -1,0 +1,18 @@
+<md-card class="login-box">
+  <md-card-header class="title">Open account</md-card-header>
+  <md-card-content>
+    <a class="create-account" routerLink="../register">Create new account</a>
+    <form novalidate>
+      <button type="button" (click)="fileInput.click()"
+              class="mat-primary file-button" md-raised-button>Select account file</button>
+      <input type="file" name="walletFile" [hidden]="true" #fileInput>
+      <md-form-field class="form-field">
+        <input mdInput placeholder="Account password">
+      </md-form-field>
+      <button type="submit" (click)="fileInput.click()"
+              class="mat-primary login-btn" md-raised-button>Login</button>
+    </form>
+  </md-card-content>
+
+
+</md-card>
