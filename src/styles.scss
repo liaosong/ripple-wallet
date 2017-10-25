@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css/normalize.css';
+@import "app/core/styles/themes.scss";
+@include mat-core();
+
+$first-theme-primary: mat-palette($mat-indigo);
+$first-theme-accent: mat-palette($mat-teal);
+$first-theme-warn: mat-palette($mat-red);
+
+$first-theme: mat-light-theme(
+    $first-theme-primary,
+    $first-theme-accent,
+    $first-theme-warn
+);
+
+@include app-theme($first-theme)
+
+
+body {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}

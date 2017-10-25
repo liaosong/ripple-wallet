@@ -16,6 +16,14 @@ export const routes: Routes = [
         path: 'overview',
         loadChildren: 'app/pages/main/overview/overview.module#OverviewModule',
       },
+      {
+        path: 'history',
+        loadChildren: 'app/pages/main/history/history.module#HistoryModule',
+      },
+      {
+        path: 'send',
+        loadChildren: 'app/pages/main/send/send.module#SendModule',
+      }
     ],
   }
 ]
