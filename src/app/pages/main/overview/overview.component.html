@@ -1,1 +1,18 @@
-<h1>test</h1>
+<div class="accounts">
+  <div class="account-item mat-elevation-z1" *ngFor="let account of accounts">
+    <div class="detail">
+      <div class="available">
+        <span>Available: </span>
+        <span>3000</span>
+      </div>
+      <div class="reserve">
+        <span>Reserve: </span>
+        <span>3000</span>
+      </div>
+    </div>
+    <div class="total">
+      <span>Total: </span>
+      <span>{{account.xrpBalance}}</span>
+    </div>
+  </div>
+</div>

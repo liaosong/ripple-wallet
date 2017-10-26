@@ -1,0 +1,22 @@
+
+.account-item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  line-height: 3rem;
+  padding: 0 2rem;
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .detail {
+    display: flex;
+    justify-content: flex-start;
+
+    .reserve {
+      margin-left: 20px;
+    }
+  }
+}

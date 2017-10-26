@@ -1,18 +1,15 @@
 <md-card class="register-box">
-  <md-card-header>
-    <h3 class="title">Create new account</h3>
-  </md-card-header>
+  <md-card-header class="title">Create new account</md-card-header>
   <md-card-content>
-    <a class="create-account" routerLink="../login">Open existing account</a>
-    <div>
-      <button type="button"
-              class="mat-primary" md-raised-button>Create an empty account</button>
-    </div>
+    <a class="to-login" routerLink="../login">Open existing account</a>
+    <form novalidate class="register-form" (submit)="register(form.value)">
 
-    <div>
-      <button type="button"
-              class="mat-primary login-btn" md-raised-button>Create a new account with a secret key</button>
-    </div>
+      <md-form-field class="form-field">
+        <input mdInput placeholder="Create a password" type="password" [formControl]="password">
+      </md-form-field>
+      <button type="submit"
+              class="mat-primary register-btn" md-raised-button [disabled]="!form.valid">Register</button>
+    </form>
   </md-card-content>
 
 

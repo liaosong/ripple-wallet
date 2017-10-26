@@ -6,11 +6,16 @@ import { EntranceRoutingModule } from './entrance-routing.module'
 import { EntranceComponent } from './entrance.component'
 import { SharedModule } from '../../shared/shared.module'
 import { MdButtonModule, MdCardModule, MdInputModule } from '@angular/material'
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   imports: [
     CommonModule,
     EntranceRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     SharedModule,
     MdInputModule,
     MdButtonModule,
