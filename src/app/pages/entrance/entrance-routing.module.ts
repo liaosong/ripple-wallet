@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router'
 import { EntranceComponent } from './entrance.component'
 import { LoginComponent } from './login/login.component'
 import { RegisterComponent } from './register/register.component'
+import { RegisterSuccessComponent } from './register-success/register-success.component'
 
 export const routes: Routes = [
     {
@@ -21,6 +22,10 @@ export const routes: Routes = [
             {
                 path: 'register',
                 component: RegisterComponent,
+            },
+            {
+              path: 'register-success',
+              component: RegisterSuccessComponent,
             },
         ],
     },

@@ -6,8 +6,9 @@ import { EntranceRoutingModule } from './entrance-routing.module'
 import { EntranceComponent } from './entrance.component'
 import { SharedModule } from '../../shared/shared.module'
 import { MdButtonModule, MdCardModule, MdInputModule } from '@angular/material'
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { HttpClientModule } from "@angular/common/http";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http'
+import { RegisterSuccessComponent } from './register-success/register-success.component'
 
 @NgModule({
   imports: [
@@ -21,6 +22,6 @@ import { HttpClientModule } from "@angular/common/http";
     MdButtonModule,
     MdCardModule,
   ],
-  declarations: [EntranceComponent, LoginComponent, RegisterComponent]
+  declarations: [EntranceComponent, LoginComponent, RegisterComponent, RegisterSuccessComponent]
 })
 export class EntranceModule { }

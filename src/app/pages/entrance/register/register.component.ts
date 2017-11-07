@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms'
+import { ApiAddress } from '../../../core/core.api'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-register',
@@ -14,6 +16,7 @@ export class RegisterComponent implements OnInit {
   constructor(
     private http: HttpClient,
     private fb: FormBuilder,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -25,7 +28,11 @@ export class RegisterComponent implements OnInit {
   }
 
   register(value) {
-    // this.http
+    this.http.post(ApiAddress.CREATE_WALLET, value).subscribe(() => {
+      this.router.navigate(['entrance/register-success'])
+    }, (err) => {
+
+    })
   }
 
 }

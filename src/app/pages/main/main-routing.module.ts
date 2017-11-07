@@ -23,6 +23,10 @@ export const routes: Routes = [
       {
         path: 'send',
         loadChildren: 'app/pages/main/send/send.module#SendModule',
+      },
+      {
+        path: 'accounts',
+        loadChildren: 'app/pages/main/account/account.module#AccountModule',
       }
     ],
   }

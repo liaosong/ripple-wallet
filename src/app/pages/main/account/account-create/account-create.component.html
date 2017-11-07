@@ -1,0 +1,21 @@
+<md-tab-group>
+  <md-tab label="Create an empty account" class="tab-title">
+    <div class="content">
+      <button type="submit"
+              class="mat-primary create-btn" md-raised-button (click)="createWallet()">Create an empty account</button>
+    </div>
+  </md-tab>
+  <md-tab label="Create with a private key" class="tab-title">
+    <div class="content">
+      <form novalidate (submit)="createWallet(form.value)" [formGroup]="form">
+        <md-form-field class="form-field">
+          <input mdInput type="text"
+                 [formControl]="privateKey" placeholder="private key">
+        </md-form-field>
+        <button type="submit"
+                class="mat-primary create-btn" md-raised-button>Create</button>
+      </form>
+
+    </div>
+  </md-tab>
+</md-tab-group>
